@@ -1186,12 +1186,12 @@ const imageMap = {
 
 // Set hero background
 document.getElementById('heroBg').style.backgroundImage =
-  "url('images/" + imageMap.heroBg + "')";
+  "url('/" + imageMap.heroBg + "')";
 
 // Set img src for about and gallery
 ['aboutImg','gal1','gal2','gal3','gal4','gal5','gal6'].forEach(id => {
   const el = document.getElementById(id);
-  if(el) el.src = 'images/' + imageMap[id];
+  if(el) el.src = '/' + imageMap[id];
 });
 
 // ── HEADER SCROLL EFFECT ──
